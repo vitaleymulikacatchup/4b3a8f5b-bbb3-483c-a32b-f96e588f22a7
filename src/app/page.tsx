@@ -8,14 +8,12 @@ import TeamCardThree from '@/components/sections/team/TeamCardThree';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterBase from '@/components/sections/footer/FooterBase';
-
 const assetMap = [
   { "id": "hero-image", "url": "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "High-End Gaming PC Interior with Colorful RGB Lights" },
   { "id": "about-image", "url": "https://images.pexels.com/photos/34234301/pexels-photo-34234301.png?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Two professionals working at a shared office desk, top view." },
   { "id": "features-image", "url": "https://images.pexels.com/photos/34301927/pexels-photo-34301927.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Close-up of an AMD Radeon Graphics Card with RGB Lights" },
   { "id": "testimonial-image", "url": "https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Close-up of a realtor handing over a house key to a new homeowner, symbolizing ownership and investment." }
 ];
-
 export default function Home() {
   return (
     <ThemeProvider
@@ -66,7 +64,7 @@ export default function Home() {
             title="Choose Your Plan"
             plans={[
               { id: "1", price: "$10/mo", name: "Starter Plan", features: ["Up to 10 users", "Email support"], buttons: [{ text: "Sign Up", href: "#" }] },
-              { id: "2", badge: "Most popular plan", badgeIcon: (await import('lucide-react')).Sparkles, price: "$20/mo", name: "Pro Plan", features: ["Up to 50 users", "Priority support"], buttons: [{ text: "Sign Up", href: "#" }, { text: "Contact Sales", href: "#" }] }
+              { id: "2", badge: "Most popular plan", badgeIcon: {"name": "Sparkles"}, price: "$20/mo", name: "Pro Plan", features: ["Up to 50 users", "Priority support"], buttons: [{ text: "Sign Up", href: "#" }, { text: "Contact Sales", href: "#" }] }
             ]}
             className="bg-blue-50 text-gray-800"
           />
